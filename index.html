@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交通誘導警備キャンペーンチラシ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #e5e7eb;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .print-area {
+                box-shadow: none !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="py-8">
+
+    <!-- 印刷ボタン (画面用) -->
+    <div class="max-w-4xl mx-auto mb-4 text-right no-print px-4">
+        <button onclick="window.print()" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 -mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            このチラシを印刷する
+        </button>
+    </div>
+
+    <!-- チラシ本体 (A4サイズ比率想定) -->
+    <div class="print-area max-w-[210mm] mx-auto bg-white shadow-2xl overflow-hidden relative">
+        
+        <!-- Header Section -->
+        <div class="px-8 pt-10 pb-6 text-center">
+            <p class="text-gray-800 font-bold text-lg mb-2">兵庫県内で警備が必要な工事をされている業者様へ</p>
+            <h1 class="text-4xl font-black text-blue-900 mb-4 tracking-tight">現場の「質」と「予算」を守ります。</h1>
+            <p class="text-2xl font-bold text-gray-800">交通誘導警備は弊社にお任せください。</p>
+        </div>
+
+        <!-- Campaign Offer Section -->
+        <div class="bg-yellow-400 mx-8 rounded-xl p-6 text-center shadow-md border-4 border-yellow-500 relative">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white font-bold py-1 px-6 rounded-full text-lg shadow">
+                ＼ 5月31日までのご発注で特別価格 ／
+            </div>
+            
+            <div class="flex items-center justify-center mt-4 space-x-6">
+                <div class="text-left">
+                    <span class="bg-blue-800 text-white text-sm font-bold px-3 py-1 rounded inline-block mb-1">交通費込み</span>
+                    <p class="text-gray-600 font-bold">基本単価</p>
+                    <p class="text-2xl line-through text-gray-500 decoration-red-500 decoration-2">17,000円</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="text-red-600 font-black flex items-baseline">
+                    <span class="text-6xl tracking-tighter">16,000</span>
+                    <span class="text-2xl ml-1">円/日</span>
+                </div>
+            </div>
+            
+            <p class="text-sm font-bold text-gray-800 mt-4 bg-white/70 inline-block px-4 py-1 rounded">
+                ※兵庫県内の現場限定・5月末までの発注で工期問わず、6月以降も上記金額で契約いたします
+            </p>
+        </div>
+
+        <!-- Points Section -->
+        <div class="px-8 py-8 space-y-6">
+            
+            <!-- POINT 1 -->
+            <div class="border-2 border-blue-600 rounded-lg p-5 relative mt-4">
+                <div class="absolute -top-5 left-6 bg-blue-600 text-white font-black text-xl py-1 px-4 rounded shadow-md">
+                    POINT 1
+                </div>
+                <h2 class="text-2xl font-bold text-blue-900 mt-2 mb-3 border-b border-blue-200 pb-2">
+                    急なご依頼もOK！前日の手配対応
+                </h2>
+                <div class="flex items-start">
+                    <div class="text-blue-500 mr-4 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed text-lg">
+                        <span class="text-red-600 font-bold">前日の午前中まで</span>なら、翌日の警備依頼も喜んで受け付けております！<br>
+                        「急に明日警備が必要になった」「手配が漏れていた」といった突発的な事態にも迅速に対応。現場の進行を止めることなく、スムーズな人員手配をサポートします。
+                    </p>
+                </div>
+            </div>
+
+            <!-- POINT 2 -->
+            <div class="border-2 border-blue-600 rounded-lg p-5 relative mt-8">
+                <div class="absolute -top-5 left-6 bg-blue-600 text-white font-black text-xl py-1 px-4 rounded shadow-md">
+                    POINT 2
+                </div>
+                <h2 class="text-2xl font-bold text-blue-900 mt-2 mb-3 border-b border-blue-200 pb-2">
+                    広域をカバー！地域密着の豊富な隊員数
+                </h2>
+                <p class="text-gray-700 font-medium leading-relaxed mb-4">
+                    県内各エリアに多数の隊員（総勢50名以上）が在籍。現場近くのスタッフを配置することで、交通費込みの安心価格と柔軟な対応力を実現しています。広範囲の現場をお任せください。
+                </p>
+                
+                <!-- エリア表 -->
+                <div class="bg-blue-50 rounded p-4 border border-blue-100">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="text-sm font-bold text-blue-800 mb-2 border-b border-blue-200 pb-1">神戸市エリア</h3>
+                            <ul class="space-y-1 text-gray-800 font-bold">
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">灘区・東灘区</span> <span class="text-blue-700">12 名</span></li>
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">兵庫区・長田区</span> <span class="text-blue-700">8 名</span></li>
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">垂水区・須磨区</span> <span class="text-blue-700">7 名</span></li>
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">神戸市北区</span> <span class="text-blue-700">6 名</span></li>
+                                <li class="flex justify-between pb-1"><span class="text-gray-600 font-medium">神戸市西区</span> <span class="text-blue-700">5 名</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold text-blue-800 mb-2 border-b border-blue-200 pb-1">阪神・播磨エリア</h3>
+                            <ul class="space-y-1 text-gray-800 font-bold">
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">明石市</span> <span class="text-blue-700">8 名</span></li>
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">尼崎市</span> <span class="text-blue-700">4 名</span></li>
+                                <li class="flex justify-between border-b border-blue-200/50 pb-1"><span class="text-gray-600 font-medium">芦屋市</span> <span class="text-blue-700">3 名</span></li>
+                                <li class="flex justify-between pb-1"><span class="text-gray-600 font-medium">西宮市</span> <span class="text-blue-700">2 名</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Company Info Section -->
+        <div class="px-8 flex justify-between items-end mb-6">
+            <div>
+                <h3 class="text-xl font-black text-gray-800 mb-1">シティネット・トラスト株式会社</h3>
+                <p class="text-sm text-gray-600 mb-2">兵庫県公安委員会 第63001677号</p>
+                <p class="text-sm text-gray-700">〒650-0001</p>
+                <p class="text-sm text-gray-700">兵庫県神戸市中央区加納町4-3-5 三宮御幸ビル4F</p>
+            </div>
+            <div class="text-right">
+                <p class="text-sm font-bold text-gray-700 mb-1">担当: 宮本</p>
+                <div class="flex items-center text-gray-800">
+                    <span class="font-bold mr-2">TEL:</span>
+                    <span class="text-3xl font-black tracking-wider">078-600-2363</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAX Form Section -->
+        <div class="bg-gray-100 p-6 mx-8 mb-8 border-2 border-dashed border-gray-400 rounded-xl relative">
+            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-600 text-white text-sm font-bold py-1 px-4 rounded-full">
+                FAX返信シート
+            </div>
+            
+            <p class="text-center text-gray-700 font-bold mb-4 mt-2">ご相談・お見積り依頼など、お気軽にご返信ください。</p>
+            
+            <div class="flex justify-between items-center mb-6 border-b-2 border-gray-800 pb-2">
+                <div class="text-2xl font-black text-gray-800">送信先 FAX: <span class="text-4xl tracking-wider">078-330-8490</span></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center border-b border-gray-300 pb-2">
+                    <div class="w-32 font-bold text-gray-700">貴社名</div>
+                    <div class="flex-grow"></div>
+                </div>
+                <div class="flex items-center border-b border-gray-300 pb-2">
+                    <div class="w-32 font-bold text-gray-700">ご担当者名</div>
+                    <div class="flex-grow"></div>
+                </div>
+                <div class="flex items-center border-b border-gray-300 pb-2">
+                    <div class="w-32 font-bold text-gray-700">電話番号</div>
+                    <div class="flex-grow"></div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex space-x-6 justify-center">
+                <label class="flex items-center space-x-2 cursor-pointer">
+                    <div class="w-6 h-6 border-2 border-gray-400 bg-white"></div>
+                    <span class="font-bold text-gray-700">5月末までの特別価格について聞きたい</span>
+                </label>
+                <label class="flex items-center space-x-2 cursor-pointer">
+                    <div class="w-6 h-6 border-2 border-gray-400 bg-white"></div>
+                    <span class="font-bold text-gray-700">警備員の空き状況を知りたい</span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
